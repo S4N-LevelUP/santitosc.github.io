@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+    <title>Test de inteligencia - saan</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Inteligencias Múltiples</title>
+<!-- CSS -->
+    <style>
+    body {
+    font-family: fuenteTell;
+    color: #fff;
+    background-color: #c7b091;
+    margin: 0;
+    padding: 0;
+    /*font-size: 20px;*/
+    }   
+    @font-face {
+        font-family: fuenteBonita;
+        src: url("Astral\ Studio.ttf");
+    }
+    @font-face {
+        font-family: fuenteMagnolia;
+        src: url("Magnolia.otf");
+    }
+    @font-face {
+        font-family: fuenteTell;
+        src: url("Tell\ Me\ A\ Joke.ttf");
+    }
+    @font-face {
+        font-family: fuenteGroovy;
+        src: url("Balance\ Groovy\ -\ Groovy.ttf");
+    }
+    
+    
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            background-color: #c7b091;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 10px;
+            
+        }
+        /*DDE ACCAAAA////////////////////////////*/
+        .question {
+        border: 2px solid #fff; 
+        border-radius: 8px; 
+        padding: 15px; 
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    
+    .question p {
+        font-size: 16px; 
+        margin-bottom: 10px; 
+        font-size: 20px;
+    }
+    .santitos{
+        font-size: 20px;
+    }
+    
+    .question label {
+        display: block; 
+        margin-bottom: 5px; 
+    }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #8d7d67;
+            color: #fff;
+            cursor: pointer;    
+        }
+        .TITULO{
+            font-family: fuenteMagnolia;
+            font-size: 6em;
+            /*-------------*/
+        position: relative;
+        /*animation: moveCloud 4s linear infinite alternate; */
+    box-shadow: 
+        -20px 20px 0 -10px #fff, 
+        20px 20px 0 -10px #fff, 
+        0 0 20px rgba(0, 0, 0, 0.2); 
+        }
+        /*ACAA NUBEE*/
+
+/*@keyframes moveCloud {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 50px; 
+    }
+}*/
+   /*--------------*/
+
+   #resultado {
+    background-color: #c7b091; 
+    border: 1px solid #fff; 
+    border-radius: 5px; 
+    padding: 20px;
+    margin-top: 20px; 
+    border-width: 2px;
+}
+
+#resultado h2 {
+    margin-top: 0; 
+}
+
+#resultado p {
+    margin: 0 0 10px; 
+}
+/*PIE DE PAGINA */
+footer {
+    background-color: #8d7d67;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+.container {
+
+    margin-bottom: 50px; 
+}
+
+footer {
+
+    margin-top: 20px; 
+}
+
+    </style>
+    
+</head>
+<body>
+    <!-- Preguntas para el test de Inteligencia Artificial -->
+    <div class="container">
+        <h1 class="TITULO">Test de Inteligencia</h1>
+        <p class="santitos">Para medir tu inteligencia o para saber en que campos destacas debes seleccionar Falso o Verdadero, al final se te dará los resultados (ojo debes marcar si o si falso verdadero)</p>
+        <div class="question">
+            <p>1. Te gusta dibujar o pintar.</p>
+            <label><input type="radio" name="question1" value="1,0,0,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question1" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>2. Disfrutas de las actividades al aire libre.</p>
+            <label><input type="radio" name="question2" value="0,0,1,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question2" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>3. Te gustan los juegos de palabras como crucigramas o adivinanzas.</p>
+            <label><input type="radio" name="question3" value="1,0,0,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question3" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>4. Eres bueno/a resolviendo problemas matemáticos.</p>
+            <label><input type="radio" name="question4" value="0,1,0,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question4" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>5. Tienes una buena percepción del espacio y te gusta organizar o decorar.</p>
+            <label><input type="radio" name="question5" value="0,0,1,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question5" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>6. Te gusta bailar o realizar deportes que requieren coordinación.</p>
+            <label><input type="radio" name="question6" value="0,0,0,1,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question6" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>7. Te gusta escuchar música y tienes facilidad para aprender a tocar instrumentos.</p>
+            <label><input type="radio" name="question7" value="0,0,0,0,1,0,0"> Verdadero</label>
+            <label><input type="radio" name="question7" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>8. Te gusta trabajar en grupos y participar en actividades sociales.</p>
+            <label><input type="radio" name="question8" value="0,0,0,0,0,1,0"> Verdadero</label>
+            <label><input type="radio" name="question8" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>9. Disfrutas de pasar tiempo a solas y reflexionar sobre tus pensamientos y sentimientos.</p>
+            <label><input type="radio" name="question9" value="0,0,0,0,0,0,1"> Verdadero</label>
+            <label><input type="radio" name="question9" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>10. Eres bueno/a memorizando listas o datos.</p>
+            <label><input type="radio" name="question10" value="1,0,0,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question10" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>11. Te gusta explorar nuevas ideas y eres curioso/a.</p>
+            <label><input type="radio" name="question11" value="0,1,0,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question11" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>12. Disfrutas de los rompecabezas o juegos de estrategia.</p>
+            <label><input type="radio" name="question12" value="0,0,1,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question12" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>13. Tienes buena coordinación ojo-mano.</p>
+            <label><input type="radio" name="question13" value="0,0,0,1,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question13" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>14. Tienes sensibilidad para los sonidos, ritmos y melodías.</p>
+            <label><input type="radio" name="question14" value="0,0,0,0,1,0,0"> Verdadero</label>
+            <label><input type="radio" name="question14" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>15. Te consideras una persona empática y comprensiva.</p>
+            <label><input type="radio" name="question15" value="0,0,0,0,0,1,0"> Verdadero</label>
+            <label><input type="radio" name="question15" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>16. Tienes una buena intuición sobre ti mismo/a y sobre los demás.</p>
+            <label><input type="radio" name="question16" value="0,0,0,0,0,0,1"> Verdadero</label>
+            <label><input type="radio" name="question16" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>17. Te gusta escribir y encuentras satisfacción en la expresión escrita.</p>
+            <label><input type="radio" name="question17" value="1,0,0,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question17" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>18. Te atraen los desafíos matemáticos y las actividades lógicas.</p>
+            <label><input type="radio" name="question18" value="0,1,0,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question18" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>19. Tienes un buen sentido de la orientación y te gusta explorar nuevos lugares.</p>
+            <label><input type="radio" name="question19" value="0,0,1,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question19" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>20. Disfrutas de actividades que involucran movimiento físico.</p>
+            <label><input type="radio" name="question20" value="0,0,0,1,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question20" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>21. Tienes facilidad para aprender a tocar un instrumento musical.</p>
+            <label><input type="radio" name="question21" value="0,0,0,0,1,0,0"> Verdadero</label>
+            <label><input type="radio" name="question21" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>22. Te consideras una persona sociable y te gusta estar rodeado/a de otras personas.</p>
+            <label><input type="radio" name="question22" value="0,0,0,0,0,1,0"> Verdadero</label>
+            <label><input type="radio" name="question22" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>23. Disfrutas de la introspección y te gusta reflexionar sobre tus propios pensamientos y emociones.</p>
+            <label><input type="radio" name="question23" value="0,0,0,0,0,0,1"> Verdadero</label>
+            <label><input type="radio" name="question23" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>24. Eres bueno/a en la gramática y en la comprensión de textos escritos.</p>
+            <label><input type="radio" name="question24" value="1,0,0,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question24" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>25. Te atraen los rompecabezas matemáticos y las estrategias de resolución de problemas.</p>
+            <label><input type="radio" name="question25" value="0,1,0,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question25" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>26. Te consideras una persona con habilidades espaciales y te gusta trabajar con mapas o gráficos.</p>
+            <label><input type="radio" name="question26" value="0,0,1,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question26" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>27. Tienes habilidades deportivas o disfrutas de actividades físicas.</p>
+            <label><input type="radio" name="question27" value="0,0,0,1,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question27" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>28. Te gusta cantar y tienes buena afinación.</p>
+            <label><input type="radio" name="question28" value="0,0,0,0,1,0,0"> Verdadero</label>
+            <label><input type="radio" name="question28" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>29. Te consideras una persona amigable y con habilidades para resolver conflictos.</p>
+            <label><input type="radio" name="question29" value="0,0,0,0,0,1,0"> Verdadero</label>
+            <label><input type="radio" name="question29" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>30. Te gusta reflexionar sobre tus experiencias personales y aprender de ellas.</p>
+            <label><input type="radio" name="question30" value="0,0,0,0,0,0,1"> Verdadero</label>
+            <label><input type="radio" name="question30" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>31. Te consideras una persona con habilidades para la comunicación verbal y escrita.</p>
+            <label><input type="radio" name="question31" value="1,0,0,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question31" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>32. Te gusta resolver problemas lógicos y encontrar patrones en la información.</p>
+            <label><input type="radio" name="question32" value="0,1,0,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question32" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>33. Te consideras una persona creativa y te gusta imaginar cosas nuevas.</p>
+            <label><input type="radio" name="question33" value="0,0,1,0,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question33" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>34. Eres bueno/a en actividades físicas que requieren destreza y coordinación.</p>
+            <label><input type="radio" name="question34" value="0,0,0,1,0,0,0"> Verdadero</label>
+            <label><input type="radio" name="question34" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <div class="question">
+            <p>35. Tienes sensibilidad para apreciar la música y disfrutas de diferentes estilos musicales.</p>
+            <label><input type="radio" name="question35" value="0,0,0,0,1,0,0"> Verdadero</label>
+            <label><input type="radio" name="question35" value="0,0,0,0,0,0,0"> Falso</label>
+        </div>
+        <button onclick="calcularResultado()">Calcular Resultado</button>
+        <div id="resultado"></div>
+    </div>
+     <!-- Aquí acaban las pregunas - Iniciamos con JS -->
+    <script>
+    function calcularResultado() {
+    var respuestas = document.querySelectorAll('input[type="radio"]:checked');
+    var resultados = [0, 0, 0, 0, 0, 0, 0]; 
+
+    respuestas.forEach(function(respuesta) {
+        var valores = respuesta.value.split(',').map(Number);
+        if (respuesta.value !== "0,0,0,0,0,0,0") {
+            for (var i = 0; i < valores.length; i++) {
+                resultados[i] += valores[i];
+                if (resultados[i] > 5) {
+                    resultados[i] = 5;
+                }
+            }
+        }
+    });
+    //INTELIGENCIAS 
+    var inteligencias = ['Lingüística', 'Lógico-matemática', 'Espacial', 'Corporal-kinestésica', 'Musical', 'Interpersonal', 'Intrapersonal'];
+    var maxPuntos = Math.max(...resultados);
+    var inteligenciaDominante = inteligencias[resultados.indexOf(maxPuntos)];
+
+    var resultadoElement = document.getElementById('resultado');
+    resultadoElement.innerHTML = '<p>Tu puntuación total en cada inteligencia es:</p>';
+    for (var i = 0; i < resultados.length; i++) {
+        var habilidad = resultados[i] === 5 ? 'Sobresaliente' : 'Marcada';
+        resultadoElement.innerHTML += '<p>' + inteligencias[i] + ': ' + resultados[i] + ' (' + habilidad + ')</p>';
+    }
+
+    resultadoElement.innerHTML += '<p>Tu inteligencia dominante es: ' + inteligenciaDominante + '</p>';
+}
+
+
+    </script>
+
+<footer>
+    <p>© 2024 Santos Cahuana Poma - Estudiante Ing. Informática</p>
+</footer>
+</body>
+</html>
